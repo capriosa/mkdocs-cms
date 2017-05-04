@@ -1,2 +1,15 @@
-site_name: My Docs
+site_name: MkDocs CMS
 theme: material
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/capriosa'
+    - type: 'twitter'
+      link: 'https://twitter.com/jmdwp'
+    - type: 'facebook'
+      link: 'https://facebook.com/mdwp.de'
+  
+disqus: 'mdwp-engage'
+repo_name: 'capriosa/mkdocs-base'
+repo_url: 'https://github.com/capriosa/mkdocs-base'
