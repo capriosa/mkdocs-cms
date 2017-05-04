@@ -9,6 +9,5 @@ extra:
       link: 'https://twitter.com/jmdwp'
     - type: 'facebook'
       link: 'https://facebook.com/mdwp.de'
-  disqus: 'mdwp-engage'
 repo_name: 'capriosa/mkdocs-base'
 repo_url: 'https://github.com/capriosa/mkdocs-base'
