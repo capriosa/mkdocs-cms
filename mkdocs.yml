@@ -6,7 +6,7 @@ extra:
     - type: 'github'
       link: 'https://github.com/capriosa'
     - type: 'twitter'
-      link: 'https://twitter.com/jmdwp'
+      link: 'https://twitter.com/mdwp'
     - type: 'facebook'
       link: 'https://facebook.com/mdwp.de'
 repo_name: 'capriosa/mkdocs-cms'

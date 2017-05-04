@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: capriosa/mkdocs-base
+  repo: capriosa/mkdocs-cms
   branch: master
 
 public_folder: "site"
