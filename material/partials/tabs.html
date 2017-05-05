@@ -4,10 +4,38 @@
 {% endif %}
 <nav class="{{ class }}" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      {% for nav_item in nav %}
-        {% include "partials/tabs-item.html" %}
-      {% endfor %}
-    </ul>
+    
+    {% if page.previous_page or page.next_page %}
+    <div class="-md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        {% if page.previous_page %}
+          <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                
+                {{ lang.t('footer.previous') }} <em>{{ page.previous_page.title }}</em>
+              </span>
+            </div>
+          </a>
+        {% endif %}
+        {% if page.next_page %}
+          <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                
+                {{ lang.t('footer.next') }} <em>{{ page.next_page.title }}</em>
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        {% endif %}
+      </nav>
+    </div>
+  {% endif %}
   </div>
 </nav>

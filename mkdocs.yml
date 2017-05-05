@@ -13,7 +13,7 @@ extra:
     - type: 'facebook'
       link: 'https://facebook.com/mdwp.de'
   feature:
-    tabs: false
+    tabs: true
   palette:
     primary: pink
     accent: deep purple
