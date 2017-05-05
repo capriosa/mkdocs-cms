@@ -6,6 +6,7 @@ paragraphs:
     paragraph: Text in diesem Absatz
   - headline: 2. Headline
     paragraph: Text in diesem Absatz
+    
 ---
 # Welcome to MkDocs
 

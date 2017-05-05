@@ -120,6 +120,11 @@
                 {% endif %}
                 
                   <h1>{% if meta %}{{ page.meta.title[0] }}{% endif %}</h1>
+
+                  {% for headline in page.meta.paragraphs %}
+  <h2>{{ headline }} </h2>
+  <p> {{ paragraph }}
+{% endfor %}
                 
                 
                 {{ page.content }}
