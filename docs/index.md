@@ -1,3 +1,7 @@
+---
+title: Content Management für Dokumentationen
+date: 2017-05-05T00:00:00+02:00
+---
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
@@ -15,3 +19,4 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
