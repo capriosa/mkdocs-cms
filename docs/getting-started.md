@@ -1,5 +1,7 @@
-# Getting started
-
+---
+title: Installation des Material Theme
+date: 07.05.2017
+---
 ## Installation
 
 !!! tip "Set up Material using Docker"
@@ -485,3 +487,4 @@ markdown_extensions:
   - codehilite(guess_lang=false)
   - toc(permalink=true)
 ```
+
