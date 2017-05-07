@@ -1,5 +1,5 @@
 ---
-title: Ein CMS mit Material Design für Dokumentationen
+title: 'Ein CMS, mit Material Design, für Dokumentationen'
 date: 07.05.2017
 ---
 ## Wünderschöne Dokumentationen
@@ -20,3 +20,4 @@ Füge diese Zeile der Datei `mkdocs.yml` im Root von Material hinzu:
     theme: 'material'
 
 Weitere detaillierte Instruktionen sind hier [getting started guide](getting-started.md) zu finden.
+
