@@ -1,4 +1,8 @@
-# Admonition
+---
+title: Admonition
+date: 07.05.2017
+---
+Admonition
 
 [Admonition][1] is an extension included in the standard Markdown library that
 makes it possible to add block-styled side content to your documentation, for
@@ -355,3 +359,4 @@ Qualifiers:
 
 * `quote`
 * `cite`
+

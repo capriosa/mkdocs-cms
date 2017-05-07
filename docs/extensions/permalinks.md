@@ -1,5 +1,7 @@
-# Permalinks
-
+---
+title: Permalinks
+date: 07.05.2017
+---
 Permalinks are a feature of the [Table of Contents][1] extension, which is part
 of the standard Markdown library. The extension inserts an anchor at the end of
 each headline, which makes it possible to directly link to a subpart of the
@@ -29,3 +31,4 @@ markdown_extensions:
 ## Usage
 
 When enabled, permalinks are inserted automatically.
+

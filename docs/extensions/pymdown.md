@@ -1,5 +1,7 @@
-# PyMdown Extensions
-
+---
+title: PyMdown Extensions
+date: 07.05.2017
+---
 [PyMdown Extensions][1] is a collection of Markdown extensions that add some
 great features to the standard Markdown library. For this reason, the
 **installation of this package is highly recommended** as it's well-integrated
@@ -282,3 +284,4 @@ achived by prefixing inline code with a shebang and language identifier,
 e.g. `#!js`.
 
   [24]: https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
+
