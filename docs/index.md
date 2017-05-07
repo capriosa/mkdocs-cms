@@ -1,30 +1,22 @@
-# Material <small>for MkDocs</small>
+---
+title: Ein CMS mit Material Design für Dokumentationen
+date: 07.05.2017
+---
+## Wünderschöne Dokumentationen
 
-## Beautiful project documentation
+Material ist ein Theme für [MkDocs](http://www.mkdocs.org), ein ausgezeichneter Static Site Generator für Online-Dokumentationen. Das Design basiert auf Google's [Material Design](https://www.google.com/design/spec/material-design)
+Richtlinien.
 
-Material is a theme for [MkDocs][1], an excellent static site generator geared
-towards project documentation. It is built using Google's [Material Design][2]
-guidelines.
+[![Material für MkDocs](images/material.png)](images/material.png)
 
-[![Material for MkDocs](images/material.png)](images/material.png)
+## Start
 
-  [1]: http://www.mkdocs.org
-  [2]: https://www.google.com/design/spec/material-design
+Unstallation der neuesten Version von Material mit `pip`:
 
-## Quick start
+    pip install mkdocs-material
 
-Install the latest version of Material with `pip`:
+Füge diese Zeile der Datei `mkdocs.yml` im Root von Material hinzu:
 
-``` sh
-pip install mkdocs-material
-```
+    theme: 'material'
 
-Add the following line to your `mkdocs.yml`:
-
-``` yaml
-theme: 'material'
-```
-
-For detailed instructions see the [getting started guide][3].
-
-  [3]: getting-started.md
+Weitere detaillierte Instruktionen sind hier [getting started guide](getting-started.md) zu finden.
