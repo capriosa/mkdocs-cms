@@ -1,8 +1,7 @@
-path: tree/master/docs/extensions
-source: metadata.md
-
-# Metadata
-
+---
+title: Metadaten
+date: 07.05.2017
+---
 The [Metadata][1] extension makes it possible to add metadata to a document
 which gives more control over the theme in a page-specific context.
 
@@ -97,3 +96,4 @@ Result:
 See the [source][2] section for the resulting output.
 
   [2]: #__source
+
