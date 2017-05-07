@@ -1,3 +1,7 @@
+---
+title: Versionshinweise
+date: 07.05.2017
+---
 # Release notes
 
 ## Upgrading
@@ -303,3 +307,4 @@ pip show mkdocs-material | grep -E ^Version
 ### 0.1.0 <small> _ February 9, 2016</small>
 
 * Initial release
+
