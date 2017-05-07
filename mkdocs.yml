@@ -26,7 +26,7 @@ repo_name: 'capriosa/mkdocs-cms'
 repo_url: 'https://github.com/capriosa/mkdocs-cms'
 
 # Copyright
-copyright: 'Copyright &copy; 2017 Meinolf Droste'
+copyright: '<a href="https://www.mdwp.de">mdwp</a>'
 
 # Theme directory
 theme_dir: material
