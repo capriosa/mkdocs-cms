@@ -2,7 +2,7 @@ site_name: MkDocs CMS
 theme: material
 site_description: A Material Design theme for MkDocs
 site_author: Meinolf Droste
-site_url: http://squidfunk.github.io/mkdocs-material/
+site_url: http://mkdocs-material-cms.netlify.com
 
 extra:
   social:
@@ -15,8 +15,8 @@ extra:
   feature:
     tabs: true
   palette:
-    primary: pink
-    accent: deep purple
+    primary: indigo
+    accent: pink
 
 
 extra_css:
@@ -53,23 +53,19 @@ markdown_extensions:
   - pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
 
-  # Page tree
-#pages:
-#  - Material: index.md
-#  - Getting started: getting-started.md
-#  - Extensions:
-#    - Admonition: extensions/admonition.md
-#    - CodeHilite: extensions/codehilite.md
-#    - Footnotes: extensions/footnotes.md
-#    - Metadata: extensions/metadata.md
-#    - Permalinks: extensions/permalinks.md
-#    - PyMdown: extensions/pymdown.md
-#  - Specimen: specimen.md
-#  - Customization: customization.md
-#  - Release notes: release-notes.md
-#  - Contributing: contributing.md
-#  - License: license.md
-
+# Page tree
 pages:
-    - Home: index.md
-    - About: about.md
+  - Material: index.md
+  - Getting started: getting-started.md
+  - Extensions:
+    - Admonition: extensions/admonition.md
+    - CodeHilite: extensions/codehilite.md
+    - Footnotes: extensions/footnotes.md
+    - Metadata: extensions/metadata.md
+    - Permalinks: extensions/permalinks.md
+    - PyMdown: extensions/pymdown.md
+  - Specimen: specimen.md
+  - Customization: customization.md
+  - Release notes: release-notes.md
+  - Contributing: contributing.md
+  - License: license.md
