@@ -1,5 +1,7 @@
-# Contributing
-
+---
+title: Mitarbeit am Material Theme
+date: 07.05.2017
+---
 Interested in contributing to the Material theme? Want to report a bug? Before
 you do, please read the following guidelines.
 
@@ -79,3 +81,4 @@ After your PR is merged, you can safely delete your branch and pull the changes
 from the main (upstream) repository.
 
   [4]: http://squidfunk.github.io/mkdocs-material/customization/#theme-development
+
