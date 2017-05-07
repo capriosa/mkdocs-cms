@@ -1,5 +1,7 @@
-# Customization
-
+---
+title: Anpassung
+date: 07.05.2017
+---
 ## A great starting point
 
 Project documentation is as diverse as the projects themselves and the Material
@@ -243,3 +245,4 @@ the aforementioned directory in your original `mkdocs.yml`.
 
 Now you can run `mkdocs build` and you should see your documentation with your
 changes to the original Material theme.
+
