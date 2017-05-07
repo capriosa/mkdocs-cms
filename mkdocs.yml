@@ -2,7 +2,7 @@ site_name: MkDocs CMS
 theme: material
 site_description: A Material Design theme for MkDocs
 site_author: Meinolf Droste
-site_url: http://mkdocs-material-cms.netlify.com
+site_url: http://mdwp-mkdocs-cms.netlify.com/
 
 extra:
   social:
