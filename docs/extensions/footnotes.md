@@ -1,5 +1,7 @@
-# Footnotes
-
+---
+title: Fußnoten
+date: 07.05.2017
+---
 [Footnotes][1] is another extension included in the standard Markdown library.
 As the name says, it adds the ability to add footnotes to your documentation.
 
@@ -82,3 +84,4 @@ Result:
       auctor massa, nec semper lorem quam in massa.
 
 <a href="#fn:2">Jump to footnote at the bottom of the page</a>
+
