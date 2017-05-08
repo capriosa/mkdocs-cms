@@ -7,9 +7,9 @@ date: 08.05.2017
 Material ist ein Theme für [MkDocs](http://www.mkdocs.org), ein ausgezeichneter Static Site Generator für Online-Dokumentationen. Das Design basiert auf Google's [Material Design](https://www.google.com/design/spec/material-design)
 Richtlinien.
 
-Ich habe das [Netlify-CMS](https://netlify-cms.org) mit MkDocs und dem Material Theme verknüpft. Wenn du einen Github und Netlify Account hast, kannst du alles mit einem Klick [deployen](https://app.netlify.com/start/deploy?repository=https://github.com/capriosa/mkdocs-cms) und deine Dokumentationen bequem *On-Site* mit einem CMS erstellen.
+Ich habe das [Netlify-CMS](https://netlifycms.org) mit MkDocs und dem Material Theme verknüpft. Wenn du einen Github und Netlify Account hast, kannst du alles mit einem Klick [deployen](https://app.netlify.com/start/deploy?repository=https://github.com/capriosa/mkdocs-cms) und deine Dokumentationen bequem *On-Site* mit einem CMS erstellen.
 
-Bitte, lies bitte vorher [hier den Abschnitt über Authenticate with Github](https://www.netlifycms.org/docs/test-drive/).
+Bitte, lies vorher [hier den Abschnitt über Authenticate with Github](https://www.netlifycms.org/docs/test-drive/).
 
 [![Material für MkDocs](images/material.png)](images/material.png)
 
