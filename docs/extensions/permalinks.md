@@ -15,18 +15,18 @@ markdown_extensions:
   - toc(permalink=true)
 ```
 
-This will add a link containing the paragraph symbol `¶` at the end of each
-headline (exactly like on the page you're currently viewing), which the
-Material theme will make appear on hover. In order to change the text of the
-permalink, a string can be passed, e.g.:
+Dadurch wird ein Link mit diesem Symbol `¶` an das Ende jeder Headline hinzugefügt. (So wie es hier auf dieser Seite zu sehen ist)
+
+Um den Text der Permalinks zu ändern, muss der Konfiguration ein Text hinzugefügt werden, z.B.:
 
 ``` markdown
 markdown_extensions:
   - toc(permalink=Link)
 ```
 
-## Usage
+## Anwendung
 
-When enabled, permalinks are inserted automatically.
+Wenn die Erweiterung aktiviert ist, werden Permalinks automatisch hinzugefügt.
+
 
 
