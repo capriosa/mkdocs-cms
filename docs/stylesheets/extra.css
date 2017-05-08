@@ -15,3 +15,10 @@
 .md-typeset h1 {
     margin: 0 0 0;
 }
+
+@media only screen and (min-width: 76.25em) {
+
+.md-tabs~.md-main .md-nav--primary>.md-nav__list>.md-nav__item--nested {
+    font-size: 15px;
+}
+}

@@ -57,7 +57,7 @@ markdown_extensions:
 pages:
   - 'Material': 'index.md'
   - 'Getting started': 'getting-started.md'
-  - Extensions:
+  - Erweiterungen:
     - 'Admonition': 'extensions/admonition.md'
     - 'CodeHilite': 'extensions/codehilite.md'
     - 'Footnotes': 'extensions/footnotes.md'
