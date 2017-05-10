@@ -58,21 +58,20 @@ pages:
   - 'MkDocs-CMS': 'index.md'
   - McDocs:
     - 'Dokumentation': 'mkdocs.md'
-  - Material Theme: 
-    - 'Getting started': 'getting-started.md'
-    - Erweiterungen:
-      - 'Admonition': 'extensions/admonition.md'
-      - 'CodeHilite': 'extensions/codehilite.md'
-      - 'Footnotes': 'extensions/footnotes.md'
-      - 'Metadata': 'extensions/metadata.md'
-      - 'Permalinks': 'extensions/permalinks.md'
-      - 'PyMdown': 'extensions/pymdown.md'
-    - 'Specimen': 'specimen.md'
-    - 'Customization': 'customization.md'
-    - Lizenz:
-      - 'Release notes': 'release-notes.md'
-      - 'Contributing': 'contributing.md'
-      - 'License': 'license.md'
+  - 'Getting started': 'getting-started.md'
+  - Erweiterungen:
+    - 'Admonition': 'extensions/admonition.md'
+    - 'CodeHilite': 'extensions/codehilite.md'
+    - 'Footnotes': 'extensions/footnotes.md'
+    - 'Metadata': 'extensions/metadata.md'
+    - 'Permalinks': 'extensions/permalinks.md'
+    - 'PyMdown': 'extensions/pymdown.md'
+  - 'Specimen': 'specimen.md'
+  - 'Customization': 'customization.md'
+  - Lizenz:
+    - 'Release notes': 'release-notes.md'
+    - 'Contributing': 'contributing.md'
+    - 'License': 'license.md'
   - 'M. Droste': 'mdroste.md'
   - 'Kontakt': 'kontakt.md'
   - 'Impressum': 'impressum.md'
