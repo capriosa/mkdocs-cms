@@ -2,29 +2,19 @@
 title: Mitarbeit am Material Theme
 date: 07.05.2017
 ---
-Interested in contributing to the Material theme? Want to report a bug? Before
-you do, please read the following guidelines.
+Wenn du Interesse daran hast zur Weiterentwicklung des Material Themes etwas beizutragen oder Fehler zu melden, lese bitte die folgenden Richtlinien.
 
-## Submission context
+## Einreichungskontext
 
-### Got a question or problem?
+### Du hast eine Frage oder ein Problem?
 
-For quick questions there's no need to open an issue as you can reach us on
-[gitter.im][1].
-
-  [1]: https://gitter.im/squidfunk/mkdocs-material
+Für kleine Fragen ist es nicht nötig einen Issue auf Github anzulegen. Du kannst diese im [gitter.im](https://gitter.im/squidfunk/mkdocs-material). Raum stellen.
 
 ### Found a bug?
 
-If you found a bug in the source code, you can help us by submitting an issue
-to the [issue tracker][2] in our GitHub repository. Even better, you can submit
-a Pull Request with a fix. However, before doing so, please read the
-[submission guidelines][3].
+Wenn du einen Fehler im Quellcode gefunden hast, kannst du uns helfen indem du einen Issue im [Issue tracker](https://github.com/squidfunk/mkdocs-material/issues) unseres Github Repositories anlegst. Oder noch besser du sendest uns einen Pull Request mit dem Bugfix. Aber lies bitte vorher die [Einreichungs Richtlinien](#submission-guidelines).
 
-  [2]: https://github.com/squidfunk/mkdocs-material/issues
-  [3]: #submission-guidelines
-
-### Missing a feature?
+### Du vermisst ein “Feature“?
 
 You can request a new feature by submitting an issue to our GitHub Repository.
 If you would like to implement a new feature, please submit an issue with a
@@ -36,7 +26,6 @@ it is:
   that it can be discussed. This will also allow us to better coordinate our
   efforts, prevent duplication of work, and help you to craft the change so
   that it is successfully accepted into the project.
-
 * **Small features and bugs** can be crafted and directly submitted as a Pull
   Request. However, there is no guarantee that your feature will make it into
   the master, as it's always a matter of opinion whether if benefits the
@@ -64,21 +53,16 @@ Search GitHub for an open or closed PR that relates to your submission. You
 don't want to duplicate effort. If you do not find a related issue or PR,
 go ahead.
 
-1. **Development**: Fork the project, set up the [development environment][4],
-  make your changes in a separate git branch and add descriptive messages to
-  your commits.
-
+1. **Development**: Fork the project, set up the [development environment](http://squidfunk.github.io/mkdocs-material/customization/#theme-development),
+   make your changes in a separate git branch and add descriptive messages to
+   your commits.
 2. **Build**: Before submitting a pull requests, build the theme. This is a
-  mandatory requirement for your PR to get accepted, as the theme should at
-  all times be installable through GitHub.
-
+   mandatory requirement for your PR to get accepted, as the theme should at
+   all times be installable through GitHub.
 3. **Pull Request**: After building the theme, commit the compiled output, push
-  your branch to GitHub and send a PR to `mkdocs-material:master`. If we
-  suggest changes, make the required updates, rebase your branch and push the
-  changes to your GitHub repository, which will automatically update your PR.
+   your branch to GitHub and send a PR to `mkdocs-material:master`. If we
+   suggest changes, make the required updates, rebase your branch and push the
+   changes to your GitHub repository, which will automatically update your PR.
 
 After your PR is merged, you can safely delete your branch and pull the changes
 from the main (upstream) repository.
-
-  [4]: http://squidfunk.github.io/mkdocs-material/customization/#theme-development
-
