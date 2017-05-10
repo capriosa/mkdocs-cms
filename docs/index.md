@@ -9,12 +9,14 @@ Richtlinien.
 
 !!! summary "MkDocs mit CMS"
 
-Ich habe das [Netlify-CMS](https://netlifycms.org) 
-mit MkDocs und dem Material Theme verknüpft. Wenn 
-du einen Github und Netlify Account hast, kannst du 
-alles mit einem Klick [deployen](https://app.netlify.com/start/deploy?
-repository=https://github.com/capriosa/mkdocs-cms) 
-und deine Dokumentationen bequem *On-Site* mit einem CMS erstellen.
+    Ich habe das [Netlify-CMS](https://netlifycms.org) 
+    mit MkDocs und dem Material Theme verknüpft. Wenn 
+    du einen Github und Netlify Account hast, kannst du 
+    alles mit einem Klick [deployen]
+    (https://app.netlify.com/start/deploy?
+    repository=https://github.com/capriosa/mkdocs-cms) 
+    und deine Dokumentationen bequem *On-Site* mit einem CMS 
+    erstellen.
 
 Bitte, lies vorher [hier den Abschnitt über Authenticate with Github](https://www.netlifycms.org/docs/test-drive/).
 
@@ -31,4 +33,5 @@ Füge diese Zeile der Datei `mkdocs.yml` im Root von Material hinzu:
     theme: 'material'
 
 Weitere detaillierte Instruktionen sind hier [getting started guide](getting-started.md) zu finden.
+
 
