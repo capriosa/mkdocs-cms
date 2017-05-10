@@ -1,84 +1,57 @@
 ---
-title: Anpassung
+title: Anpassungen
 date: 07.05.2017
 ---
-## A great starting point
+## Ein guter Ausgangspunkt
 
-Project documentation is as diverse as the projects themselves and the Material
-theme is a good starting point for making it look great. However, as you write
-your documentation, you may reach a point where some small adjustments are
-necessary to preserve the desired style.
+Projekt Dokumentationen sind so vielfältig wie die Projekte selbst. Das Material Theme ist ein guter Ausgangspunkt damit die Dokumentationen schön aussehen. Aber manchmal wird es notwendig sein kleine Anpassungen vorzunehmen, um eigene Vorstellungen was das Design betrifft umzusetzen.
 
-## Adding assets
+## Assets hinzufügen
 
-[MkDocs][1] provides several ways to interfere with themes. In order to make a
-few tweaks to an existing theme, you can just add your stylesheets and
-JavaScript files to the `docs` directory.
+[MkDocs](http://www.mkdocs.org) bietet verschiedene Möglichkeiten Themes anzupassen. Hierzu fügst du einfach dem `docs` Verzeichnis Stylesheet oder Javascript Dateien hinzu.
 
-  [1]: http://www.mkdocs.org
+### Zusätzliche Stylesheets
 
-### Additional stylesheets
+Zusätzliche Styleseehts werden am Besten in einem Unterverzeichnis des `docs` Verzeichnis hinzugefügt:
 
-If you want to tweak some colors or change the spacing of certain elements,
-you can do this in a separate stylesheet. The easiest way is by creating a
-new stylesheet file in your `docs` directory:
+    mkdir docs/stylesheets
+    touch docs/stylesheets/extra.css
 
-``` sh
-mkdir docs/stylesheets
-touch docs/stylesheets/extra.css
-```
+Danach müssen folgende Zeilen der `mkdocs.yml hinzugefügt werden`:
 
-Then, add the following line to your `mkdocs.yml`:
+    extra_css:
+      - 'stylesheets/extra.css'
 
-``` yaml
-extra_css:
-  - 'stylesheets/extra.css'
-```
+Nach dem Start des lokalen Entwicklungs-Server mit `mkdocs serve` werden Änderungen der Stylesheets dank \*live reloading\* sofort im Browser angezeigt.
 
-Spin up the development server with `mkdocs serve` and start typing your
-changes in your additional stylesheet file – you can see them instantly after
-saving, as the MkDocs development server implements live reloading.
+### Zusätzliches JavaScript
 
-### Additional JavaScript
+Das gleiche gilt für JavaScript. Auch zusätzliche JavaScript Dateien sollten in einem Unterverzeichnis des `docs` Verzeichnis gespeichert werden:
 
-The same is true for additional JavaScript. If you want to integrate another
-syntax highlighter or add some custom logic to your theme, create a new
-JavaScript file in your `docs` directory:
+    mkdir docs/javascripts
+    touch docs/javascripts/extra.js
 
-``` sh
-mkdir docs/javascripts
-touch docs/javascripts/extra.js
-```
+Danach müssen folgende Zeilen der `mkdocs.yml hinzugefügt werden`:
 
-Then, add the following line to your `mkdocs.yml`:
+    extra_javascript:
+      - 'javascripts/extra.js'
 
-``` yaml
-extra_javascript:
-  - 'javascripts/extra.js'
-```
-
-Further assistance can be found in the [MkDocs documentation][2].
-
-  [2]: http://www.mkdocs.org/user-guide/styling-your-docs/#customizing-a-theme
+Weitere Hilfe ist in der [MkDocs Dokumentation](http://www.mkdocs.org/user-guide/styling-your-docs/#customizing-a-theme) zu finden.
 
 ## Extending the theme
 
 If you want to alter the HTML source (e.g. add or remove some part), you can
-extend the theme. From version 0.16 on MkDocs implements [theme extension][3],
+extend the theme. From version 0.16 on MkDocs implements [theme extension](http://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme_dir),
 an easy way to override parts of a theme without forking and changing the
 main theme.
-
-  [3]: http://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme_dir
 
 ### Setup and theme structure
 
 Reference the Material theme as usual in your `mkdocs.yml`, and create a
 new folder for overrides, e.g. `theme`, which you reference using `theme_dir`:
 
-``` yaml
-theme: 'material'
-theme_dir: 'theme'
-```
+    theme: 'material'
+    theme_dir: 'theme'
 
 !!! warning "Theme extension prerequisites"
 
@@ -93,30 +66,28 @@ may also be put in the theme directory.
 
 The directory layout of the Material theme is as follows:
 
-``` sh
-.
-├─ assets/
-│  ├─ images/                          # Images and icons
-│  ├─ javascripts/                     # JavaScript
-│  └─ stylesheets/                     # Stylesheets
-├─ partials/
-│  ├─ disqus.html                      # Disqus integration
-│  ├─ footer.html                      # Footer bar
-│  ├─ header.html                      # Header bar
-│  ├─ language.html                    # Localized labels
-│  ├─ nav-item.html                    # Main navigation item
-│  ├─ nav.html                         # Main navigation
-│  ├─ search.html                      # Search box
-│  ├─ social.html                      # Social links
-│  ├─ source.html                      # Repository information
-│  ├─ tabs-item.html                   # Tabs navigation item
-│  ├─ tabs.html                        # Tabs navigation
-│  ├─ toc-item.html                    # Table of contents item
-│  └─ toc.html                         # Table of contents
-├─ 404.html                            # 404 error page
-├─ base.html                           # Base template
-└─ main.html                           # Default page
-```
+    .
+    ├─ assets/
+    │  ├─ images/                          # Images and icons
+    │  ├─ javascripts/                     # JavaScript
+    │  └─ stylesheets/                     # Stylesheets
+    ├─ partials/
+    │  ├─ disqus.html                      # Disqus integration
+    │  ├─ footer.html                      # Footer bar
+    │  ├─ header.html                      # Header bar
+    │  ├─ language.html                    # Localized labels
+    │  ├─ nav-item.html                    # Main navigation item
+    │  ├─ nav.html                         # Main navigation
+    │  ├─ search.html                      # Search box
+    │  ├─ social.html                      # Social links
+    │  ├─ source.html                      # Repository information
+    │  ├─ tabs-item.html                   # Tabs navigation item
+    │  ├─ tabs.html                        # Tabs navigation
+    │  ├─ toc-item.html                    # Table of contents item
+    │  └─ toc.html                         # Table of contents
+    ├─ 404.html                            # 404 error page
+    ├─ base.html                           # Base template
+    └─ main.html                           # Default page
 
 ### Overriding partials
 
@@ -132,13 +103,11 @@ which are defined inside the Material theme and wrap specific features. To
 override a template block, create a `main.html` inside the theme directory and
 define the block, e.g.:
 
-``` jinja
-{% extends "base.html" %}
-
-{% block htmltitle %}
-  <title>Lorem ipsum dolor sit amet</title>
-{% endblock %}
-```
+    {% extends "base.html" %}
+    
+    {% block htmltitle %}
+      <title>Lorem ipsum dolor sit amet</title>
+    {% endblock %}
 
 The Material theme provides the following template blocks:
 
@@ -163,63 +132,46 @@ The Material theme provides the following template blocks:
 | `social`     | Wraps the social links in the footer            |
 | `styles`     | Wraps the stylesheets (also extra sources)      |
 
-For more on this topic refer to the [MkDocs documentation][4]
-
-  [4]: http://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks
+For more on this topic refer to the [MkDocs documentation](http://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks)
 
 ## Theme development
 
-The Material theme is built on modern technologies like ES6, [Webpack][5],
-[Babel][6] and [SASS][7]. If you want to make more fundamental changes, it may
+The Material theme is built on modern technologies like ES6, [Webpack](https://webpack.github.io/),
+[Babel](https://babeljs.io) and [SASS](http://sass-lang.com). If you want to make more fundamental changes, it may
 be necessary to make the adjustments directly in the source of the Material
 theme and recompile it. This is fairly easy.
 
-  [5]: https://webpack.github.io/
-  [6]: https://babeljs.io
-  [7]: http://sass-lang.com
-
 ### Environment setup
 
-In order to start development on the Material theme, a [Node.js][8] version of
-at least 5 is required, as well as the package manager [yarn][9] which is a
+In order to start development on the Material theme, a [Node.js](https://nodejs.org) version of
+at least 5 is required, as well as the package manager [yarn](https://yarnpkg.com/) which is a
 better version of `npm`. First, clone the repository:
 
-``` sh
-git clone https://github.com/squidfunk/mkdocs-material
-```
+    git clone https://github.com/squidfunk/mkdocs-material
 
 Next, all dependencies need to be installed, which is done with:
 
-``` sh
-cd mkdocs-material
-pip install -r requirements.txt
-yarn install
-```
-
-  [8]: https://nodejs.org
-  [9]: https://yarnpkg.com/
+    cd mkdocs-material
+    pip install -r requirements.txt
+    yarn install
 
 ### Development mode
 
-The Material theme uses a sophisticated asset pipeline using [Gulp][10] and
+The Material theme uses a sophisticated asset pipeline using [Gulp](http://gulpjs.com) and
 Webpack which can be started with the following command:
 
-``` sh
-yarn start
-```
+    yarn start
 
 This will also start the MkDocs development server which will monitor changes
 on assets, templates and documentation. Point your browser to
-[localhost:8000][11] and you should see this documentation in front of you.
+[localhost:8000](http://localhost:8000) and you should see this documentation in front of you.
 
 For example, changing the color palette is as simple as changing the
 `$md-color-primary` and `$md-color-accent` variables in
 `src/assets/stylesheets/_config.scss`:
 
-``` css
-$md-color-primary: $clr-red-400;
-$md-color-accent:  $clr-teal-a700;
-```
+    $md-color-primary: $clr-red-400;
+    $md-color-accent:  $clr-teal-a700;
 
 !!! warning "Automatically generated files"
 
@@ -227,16 +179,11 @@ $md-color-accent:  $clr-teal-a700;
     directory are automatically generated from the `src` directory and will be
     overriden when the theme is built.
 
-  [10]: http://gulpjs.com
-  [11]: http://localhost:8000
-
 ### Build process
 
 When you've finished making your changes, you can build the theme by invoking:
 
-``` sh
-yarn run build
-```
+    yarn run build
 
 This triggers the production-level compilation and minification of all
 stylesheets and JavaScript sources. When the command exits, the final theme is
