@@ -57,7 +57,7 @@ markdown_extensions:
 pages:
   - 'Material': 'index.md'
   - 'Getting started': 'getting-started.md'
-  - Erweiterungen
+  - Erweiterungen:
     - 'Admonition': 'extensions/admonition.md'
     - 'CodeHilite': 'extensions/codehilite.md'
     - 'Footnotes': 'extensions/footnotes.md'
@@ -66,7 +66,7 @@ pages:
     - 'PyMdown': 'extensions/pymdown.md'
   - 'Specimen': 'specimen.md'
   - 'Customization': 'customization.md'
-  - Release, Mitarbeit, Lizenz
+  - Lizenz:
     - 'Release notes': 'release-notes.md'
     - 'Contributing': 'contributing.md'
     - 'License': 'license.md'
