@@ -57,7 +57,7 @@ markdown_extensions:
 pages:
   - 'MkDocs-CMS': 'index.md'
   - McDocs:
-    -- 'Einführung': 'mkdocs.md'
+    -- 'Dokumentation': 'mkdocs.md'
   - Material Theme: 
     - 'Getting started': 'getting-started.md'
     - Erweiterungen:
@@ -73,6 +73,6 @@ pages:
       - 'Release notes': 'release-notes.md'
       - 'Contributing': 'contributing.md'
       - 'License': 'license.md'
-  - 'Über mich': '-ber-mich.md'
+  - 'M. Droste': 'mdroste.md'
   - 'Kontakt': 'kontakt.md'
   - 'Impressum': 'impressum.md'
