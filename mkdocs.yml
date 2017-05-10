@@ -73,6 +73,6 @@ pages:
       - 'Release notes': 'release-notes.md'
       - 'Contributing': 'contributing.md'
       - 'License': 'license.md'
-  - 'Über mich': 'uber-mich.md'
+  - 'Über mich': '-ber-mich.md'
   - 'Kontakt': 'kontakt.md'
   - 'Impressum': 'impressum.md'
