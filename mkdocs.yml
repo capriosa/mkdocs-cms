@@ -58,7 +58,10 @@ pages:
   - 'MkDocs-CMS': 'index.md'
   - McDocs:
     - 'Dokumentation': 'mkdocs.md'
-  - 'Getting started': 'getting-started.md'
+  - Material Theme:
+    - 'Getting started': 'getting-started.md'
+    - 'HTML-Elemente': 'specimen.md'
+    - 'Anpassungen': 'customization.md' 
   - Erweiterungen:
     - 'Admonition': 'extensions/admonition.md'
     - 'CodeHilite': 'extensions/codehilite.md'
@@ -66,8 +69,6 @@ pages:
     - 'Metadata': 'extensions/metadata.md'
     - 'Permalinks': 'extensions/permalinks.md'
     - 'PyMdown': 'extensions/pymdown.md'
-  - 'Specimen': 'specimen.md'
-  - 'Customization': 'customization.md'
   - Lizenz:
     - 'Release notes': 'release-notes.md'
     - 'Contributing': 'contributing.md'
