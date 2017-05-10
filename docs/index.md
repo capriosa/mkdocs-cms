@@ -31,3 +31,4 @@ Füge diese Zeile der Datei `mkdocs.yml` im Root von Material hinzu:
 
 Weitere detaillierte Instruktionen sind hier [getting started guide](getting-started.md) zu finden.
 
+
