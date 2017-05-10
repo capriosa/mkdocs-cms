@@ -38,33 +38,27 @@ Danach müssen folgende Zeilen der `mkdocs.yml hinzugefügt werden`:
 
 Weitere Hilfe ist in der [MkDocs Dokumentation](http://www.mkdocs.org/user-guide/styling-your-docs/#customizing-a-theme) zu finden.
 
-## Extending the theme
+## Das Theme erweitern
 
-If you want to alter the HTML source (e.g. add or remove some part), you can
-extend the theme. From version 0.16 on MkDocs implements [theme extension](http://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme_dir),
-an easy way to override parts of a theme without forking and changing the
-main theme.
+Um das HTML des Themes zu ändern, sollte folgendermaßen vorgegangen werden. Seit Version 0.16 implementiert MkDocs [theme extension](http://www.mkdocs.org/user-guide/styling-your-docs/#using-the-theme_dir),
+eine einfache Möglichkeit, um Teile von Themes zu ändern ohne das Original-Theme zu komprimitieren.
 
-### Setup and theme structure
+### Setup und Theme-Struktur
 
-Reference the Material theme as usual in your `mkdocs.yml`, and create a
-new folder for overrides, e.g. `theme`, which you reference using `theme_dir`:
+Referenziere das Material Theme wie gewöhnlich in der `mkdocs.yml`, erzeuge ein neues Verzeichnis, z.B. `theme`, welches du dann mit dem `key:` `theme_dir` referenzierst:
 
     theme: 'material'
     theme_dir: 'theme'
 
-!!! warning "Theme extension prerequisites"
+!!! warning "Voraussetzungen für Theme-Erweiterungen"
 
-    As the `theme_dir` variable is used for the theme extension process, the
-    Material theme needs to be installed via `pip` and referenced with the
-    `theme` parameter in your `mkdocs.yml`.
+    Da die `theme_dir` Variable vom Theme-Erweiterungsprozess, muss
+    das Material Theme mit `pip` installiert werden.
 
-The structure in the theme directory must mirror the directory structure of the
-original theme, as any file in the theme directory will replace the file with
-the same name which is part of the original theme. Besides, further assets
-may also be put in the theme directory.
+Die Struktur des neues Theme Verzeichnis muss dem des
+Original Theme entsprechen, da jede Datei in diesem Verzeichnis, eine Datei mit dem gleichen Namen im Original-Theme ersetzen wird. Zusätzliche Dateien können dem neuen Verzeichnis jedoch hinzugefügt werden..
 
-The directory layout of the Material theme is as follows:
+Die Verzeichnisstruktur des Material Theme ist wir folgt:
 
     .
     ├─ assets/
@@ -89,19 +83,14 @@ The directory layout of the Material theme is as follows:
     ├─ base.html                           # Base template
     └─ main.html                           # Default page
 
-### Overriding partials
+### Partials überschreiben
 
-In order to override the footer, we can replace the `footer.html` partial with
-our own partial. To do this, create the file `partials/footer.html` in the
-theme directory. MkDocs will now use the new partial when rendering the theme.
-This can be done with any file.
+Um z.B. den Footer zu verändern, kann einfach das `footer.html` Partial durch eine eigene `footer.html`im neuen Theme-Verzeichnis ersetzt werden. MkDocs benutzt dann das neue Partial, wenn das Theme gerendert wird. Dies gilt für jede Datei.
 
-### Overriding template blocks
+### Template Blöcke überschreiben
 
-Besides overriding partials, one can also override so called template blocks,
-which are defined inside the Material theme and wrap specific features. To
-override a template block, create a `main.html` inside the theme directory and
-define the block, e.g.:
+Neben Partials können auch sog. Template-Blöcke überschrieben werden, 
+die sich auch im Material Theme befinden und spezielle *Features* zur Verfügung stellen. Um einen Template-Block zu überschreiben, erzeuge eine `main.html` im Theme-Verzeichnis und definiere den Block, z.B.:
 
     {% extends "base.html" %}
     
@@ -109,7 +98,7 @@ define the block, e.g.:
       <title>Lorem ipsum dolor sit amet</title>
     {% endblock %}
 
-The Material theme provides the following template blocks:
+Das Material Theme stellt folgende Template Blöcke zur Verfügun:
 
 | Block name   | Wrapped contents                                |
 | ------------ | ----------------------------------------------- |
@@ -132,7 +121,7 @@ The Material theme provides the following template blocks:
 | `social`     | Wraps the social links in the footer            |
 | `styles`     | Wraps the stylesheets (also extra sources)      |
 
-For more on this topic refer to the [MkDocs documentation](http://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks)
+Mehr Informationen zu diesem Thema sind hier zu finden: [MkDocs documentation](http://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks)
 
 ## Theme development
 
@@ -192,4 +181,5 @@ the aforementioned directory in your original `mkdocs.yml`.
 
 Now you can run `mkdocs build` and you should see your documentation with your
 changes to the original Material theme.
+
 
