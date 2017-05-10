@@ -56,8 +56,7 @@ markdown_extensions:
 # Page tree
 pages:
   - 'Material': 'index.md'
-  - Material Theme
-    - 'Getting started': 'getting-started.md'
+  - 'Getting started': 'getting-started.md'
   - Erweiterungen
     - 'Admonition': 'extensions/admonition.md'
     - 'CodeHilite': 'extensions/codehilite.md'
