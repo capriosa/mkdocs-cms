@@ -4,7 +4,7 @@ date: 07.05.2017
 ---
 ## Ein guter Ausgangspunkt
 
-Projekt Dokumentationen sind so vielfältig wie die Projekte selbst. Das Material Theme ist ein guter Ausgangspunkt damit die Dokumentationen schön aussehen. Aber manchmal wird es notwendig sein kleine Anpassungen vorzunehmen, um eigene Vorstellungen was das Design betrifft umzusetzen.
+Projekt Dokumentationen sind so vielfältig wie die Projekte selbst. Das Material Theme ist ein guter Ausgangspunkt damit die Dokumentationen schön aussehen. Aber manchmal wird es notwendig sein kleine Anpassungen vorzunehmen, um eigene Vorstellungen, was das Design betrifft, umzusetzen.
 
 ## Assets hinzufügen
 
@@ -181,5 +181,6 @@ the aforementioned directory in your original `mkdocs.yml`.
 
 Now you can run `mkdocs build` and you should see your documentation with your
 changes to the original Material theme.
+
 
 
