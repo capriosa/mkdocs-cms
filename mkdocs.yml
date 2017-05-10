@@ -1,4 +1,4 @@
-site_name: MkDocs CMS
+site_name: Online-Dokumentationen
 theme: material
 site_description: A Material Design theme for MkDocs
 site_author: Meinolf Droste
@@ -55,7 +55,7 @@ markdown_extensions:
 
 # Page tree
 pages:
-  - 'Material': 'index.md'
+  - 'MkDocs-CMS': 'index.md'
   - Material Theme: 
     - 'Getting started': 'getting-started.md'
     - Erweiterungen:
