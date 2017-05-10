@@ -57,7 +57,7 @@ markdown_extensions:
 pages:
   - 'MkDocs-CMS': 'index.md'
   - McDocs:
-    -- 'Dokumentation': 'mkdocs.md'
+    - 'Dokumentation': 'mkdocs.md'
   - Material Theme: 
     - 'Getting started': 'getting-started.md'
     - Erweiterungen:
