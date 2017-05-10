@@ -58,7 +58,7 @@ pages:
   - Material Theme
     - 'Material': 'index.md'
     - 'Getting started': 'getting-started.md'
-    - Erweiterungen:
+    - Erweiterungen
       - 'Admonition': 'extensions/admonition.md'
       - 'CodeHilite': 'extensions/codehilite.md'
       - 'Footnotes': 'extensions/footnotes.md'
