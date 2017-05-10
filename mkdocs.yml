@@ -56,8 +56,7 @@ markdown_extensions:
 # Page tree
 pages:
   - 'MkDocs-CMS': 'index.md'
-  - McDocs:
-    - 'Dokumentation': 'mkdocs.md'
+  - 'MkDocs Dokumentation': 'mkdocs.md'
   - 'Getting started': 'getting-started.md'
   - 'HTML-Elemente': 'specimen.md'
   - 'Anpassungen': 'customization.md' 
@@ -68,10 +67,9 @@ pages:
     - 'Metadata': 'extensions/metadata.md'
     - 'Permalinks': 'extensions/permalinks.md'
     - 'PyMdown': 'extensions/pymdown.md'
-  - Lizenz:
-    - 'Release notes': 'release-notes.md'
-    - 'Contributing': 'contributing.md'
-    - 'License': 'license.md'
+  - 'Release notes': 'release-notes.md'
+  - 'Contributing': 'contributing.md'
+  - 'License': 'license.md'
   - 'M. Droste': 'mdroste.md'
   - 'Kontakt': 'kontakt.md'
   - 'Impressum': 'impressum.md'
