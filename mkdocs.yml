@@ -56,6 +56,8 @@ markdown_extensions:
 # Page tree
 pages:
   - 'MkDocs-CMS': 'index.md'
+  - McDocs:
+    -- 'Einführung': 'mkdocs.md'
   - Material Theme: 
     - 'Getting started': 'getting-started.md'
     - Erweiterungen:
@@ -71,3 +73,6 @@ pages:
       - 'Release notes': 'release-notes.md'
       - 'Contributing': 'contributing.md'
       - 'License': 'license.md'
+  - 'Über mich': 'uber-mich.md'
+  - 'Kontakt': 'kontakt.md'
+  - 'Impressum': 'impressum.md'
