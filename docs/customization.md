@@ -1,6 +1,6 @@
 ---
 title: Anpassungen
-date: 07.05.2017
+date: 12.05.2017
 ---
 ## Ein guter Ausgangspunkt
 
@@ -58,7 +58,7 @@ Referenziere das Material Theme wie gewöhnlich in der `mkdocs.yml`, erzeuge ein
 Die Struktur des neues Theme Verzeichnis muss dem des
 Original Theme entsprechen, da jede Datei in diesem Verzeichnis, eine Datei mit dem gleichen Namen im Original-Theme ersetzen wird. Zusätzliche Dateien können dem neuen Verzeichnis jedoch hinzugefügt werden..
 
-Die Verzeichnisstruktur des Material Theme ist wir folgt:
+Die Verzeichnisstruktur des Material Theme ist wie folgt:
 
     .
     ├─ assets/
@@ -89,7 +89,7 @@ Um z.B. den Footer zu verändern, kann einfach das `footer.html` Partial durch e
 
 ### Template Blöcke überschreiben
 
-Neben Partials können auch sog. Template-Blöcke überschrieben werden, 
+Neben Partials können auch sog. Template-Blöcke überschrieben werden,
 die sich auch im Material Theme befinden und spezielle *Features* zur Verfügung stellen. Um einen Template-Block zu überschreiben, erzeuge eine `main.html` im Theme-Verzeichnis und definiere den Block, z.B.:
 
     {% extends "base.html" %}
@@ -123,64 +123,54 @@ Das Material Theme stellt folgende Template Blöcke zur Verfügun:
 
 Mehr Informationen zu diesem Thema sind hier zu finden: [MkDocs documentation](http://www.mkdocs.org/user-guide/styling-your-docs/#overriding-template-blocks)
 
-## Theme development
+## Theme Entwicklung
 
-The Material theme is built on modern technologies like ES6, [Webpack](https://webpack.github.io/),
-[Babel](https://babeljs.io) and [SASS](http://sass-lang.com). If you want to make more fundamental changes, it may
-be necessary to make the adjustments directly in the source of the Material
-theme and recompile it. This is fairly easy.
+Das Material Theme wird mit modernen Technologien wie ES6, [Webpack](https://webpack.github.io/),
+[Babel](https://babeljs.io) und [SASS](http://sass-lang.com) entwickelt. Wer große fundamentale Änderungen vornehmen möchte, muss möglicherweise diese Änderungen im Quellcode des Themes vornehmen und das Theme danach neu compilieren.
+Dies ist sehr einfach.
 
-### Environment setup
+### Einrichtung der Entwicklungsumgebung
 
-In order to start development on the Material theme, a [Node.js](https://nodejs.org) version of
-at least 5 is required, as well as the package manager [yarn](https://yarnpkg.com/) which is a
-better version of `npm`. First, clone the repository:
+Um mit der Entwicklung des Material Themes zu beginnen, ist eine [Node.js](https://nodejs.org) Version >= 5 erforderlich, ebenso wie der Package Manager [yarn](https://yarnpkg.com/) welcher eine verbesserte Version von `npm` ist. Zuallererst clone das Repositorie:
 
     git clone https://github.com/squidfunk/mkdocs-material
 
-Next, all dependencies need to be installed, which is done with:
+Als nächstes müssen alle Abhängigkeiten, mit folgenden Befehlen im Terminal, installiert werden:
 
     cd mkdocs-material
     pip install -r requirements.txt
     yarn install
 
-### Development mode
+### Entwicklungsmodus
 
-The Material theme uses a sophisticated asset pipeline using [Gulp](http://gulpjs.com) and
-Webpack which can be started with the following command:
+Das Material Theme nutzt eine *asset pipeline* mit [Gulp](http://gulpjs.com) und
+Webpack, welche mit folgendem Befehl gestartet werden kann:
 
     yarn start
 
-This will also start the MkDocs development server which will monitor changes
-on assets, templates and documentation. Point your browser to
-[localhost:8000](http://localhost:8000) and you should see this documentation in front of you.
+Der Befehl startet auch den MkDocs Entwicklungs-Server, welcher Änderungen an Assets, Templates und Inhalten beobachtet. Einach den Browser mit dieser URL öffen 
+[localhost:8000](http://localhost:8000) und diese Dokumentation wird geöffnet.
 
-For example, changing the color palette is as simple as changing the
-`$md-color-primary` and `$md-color-accent` variables in
+Um z.B. die Farb-Palette des Themes zu ändern, reicht es diese
+`$md-color-primary` and `$md-color-accent` Variablen in dieser SASS Datei zu verändern
 `src/assets/stylesheets/_config.scss`:
 
     $md-color-primary: $clr-red-400;
     $md-color-accent:  $clr-teal-a700;
 
-!!! warning "Automatically generated files"
+!!! warning "Automatisierte Generierung der Dateien"
 
-    Never make any changes in the `material` directory, as the contents of this
-    directory are automatically generated from the `src` directory and will be
-    overriden when the theme is built.
+    Nehme niemals Veränderungen im `material` Verzeichnis vor, da die Inhalte dieses
+    Verzeichnis automatisch aus `src` Verzeichnis erzeugt und beim nächsten `build`des Themes überschrieben werden.
 
-### Build process
+### Der *Build-Prozess*
 
-When you've finished making your changes, you can build the theme by invoking:
+Wenn Änderungen durchgeführt wurden, einfach diesen Befehl aufrufen:
 
     yarn run build
 
-This triggers the production-level compilation and minification of all
-stylesheets and JavaScript sources. When the command exits, the final theme is
-located in the `material` directory. Add the `theme_dir` variable pointing to
-the aforementioned directory in your original `mkdocs.yml`.
+Der Befehl startet die *production-level* Kompilierung und die Optimierung aller
+Stylesheets und JavaScript Dateien. Nach der Kompilierung ist die neue Version des Theme im
+`material` Verzeichnis. Füge die `theme_dir` Variable in der `mkdocs.yml` Datei hinzu.
 
-Now you can run `mkdocs build` and you should see your documentation with your
-changes to the original Material theme.
-
-
-
+Jetzt kann `mkdocs build` aufgerufen werden und die Änderungen am Theme sollten zu sehen sein.
